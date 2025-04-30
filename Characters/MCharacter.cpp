@@ -15,7 +15,12 @@ AMCharacter::AMCharacter()
 void AMCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	IntForEdit1 = 10;
+	IntForEdit2 = 10;
+	ResultInt = IntForEdit1 + IntForEdit2; // Pequena soma que será executada no BeginPlay para mostrar o resultado no editor :D
 	
+	UE_LOG(LogTemp, Warning, TEXT("Resultado da soma: %d"), ResultInt); // Log para mostrar o resultado da soma no console :D
 }
 
 // Called every frame

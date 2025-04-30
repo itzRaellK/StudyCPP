@@ -12,8 +12,8 @@ class STUDYCPP_API AMCharacter : public ACharacter
 	GENERATED_BODY()
 
 // How to DECLARE PUBLIC variables in Unreal Engine?
-// 1. Declare the variable in the header file (.h) using the UPROPERTY macro.
-// 1. Declare a variavel no arquivo de cabeçalho (.h) usando o macro UPROPERTY.
+// Declare the variable in the header file (.h) using the UPROPERTY macro.
+// Declare a variavel no arquivo de cabeçalho (.h) usando o macro UPROPERTY.
 public:
 	int IntTypeVariable = 0;
 	float FloatTypeVariable = 0.0f;
@@ -24,11 +24,15 @@ public:
 	FTransform TransformTypeMatrix = FTransform::Identity; 		// For some reason, this is different from the others :/
 
 // How to EDIT PUBLIC variables in Blueprints in Unreal Engine?
-// 1. Declare the variable in the header file (.h) using the UPROPERTY macro with EditAnywhere or EditDefaultsOnly specifier.
-// 1. Declare a variavel no arquivo de cabeçalho (.h) usando o macro UPROPERTY com o especificador EditAnywhere ou EditDefaultsOnly.
+// Declare the variable in the header file (.h) using the UPROPERTY macro with EditAnywhere or EditDefaultsOnly specifier.
+// Declare a variavel no arquivo de cabeçalho (.h) usando o macro UPROPERTY com o especificador EditAnywhere ou EditDefaultsOnly.
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int IntTypeForExempleToEditAnywhere = 0;
+	int IntForEdit1 = 0;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int IntForEdit2 = 0;
+	UPROPERTY(VisibleAnywhere)
+	int ResultInt = 0;
 
 public:
 	// Sets default values for this character's properties
