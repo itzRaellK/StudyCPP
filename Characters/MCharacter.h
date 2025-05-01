@@ -30,9 +30,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int IntForEdit1 = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int IntForEdit2 = 0;
-	UPROPERTY(VisibleAnywhere)
+	int IntForEdit2 = 20;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	int ResultInt = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString SayHello = "Hello Unreal Engine!";
 
 public:
 	// Sets default values for this character's properties

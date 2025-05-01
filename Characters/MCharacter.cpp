@@ -16,11 +16,26 @@ void AMCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	IntForEdit1 = 10;
-	IntForEdit2 = 10;
-	ResultInt = IntForEdit1 + IntForEdit2; // Pequena soma que será executada no BeginPlay para mostrar o resultado no editor :D
+	// Ctrl + K, Ctrl + C // Comentar o código selecionado :D
+	// Ctrl + K, Ctrl + U // Descomentar o código selecionado :D
 	
-	UE_LOG(LogTemp, Warning, TEXT("Resultado da soma: %d"), ResultInt); // Log para mostrar o resultado da soma no console :D
+
+	// IntForEdit1 = 10;
+	// IntForEdit2 = 10;
+	// ResultInt = IntForEdit1 + IntForEdit2; // Pequena soma que será executada no BeginPlay para mostrar o resultado no editor :D
+	
+	// UE_LOG(LogTemp, Warning, TEXT("Resultado da soma: %d"), ResultInt); // Log para mostrar o resultado da soma no console :D
+
+	while (IntForEdit1 < IntForEdit2) {
+		IntForEdit1+= 2;
+		ResultInt = IntForEdit1;
+		UE_LOG(LogTemp, Warning, TEXT("Valor do resultado: %d"), ResultInt);
+	}
+
+	for(int i = 0; i < 10; i++) {
+		int Indice = i + 1;
+		UE_LOG(LogTemp, Warning, TEXT("%d - %s"), Indice, *SayHello); // Log para mostrar a string no console :D - Usasse * para converter o FString em TCHAR :D
+	}
 }
 
 // Called every frame
