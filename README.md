@@ -40,3 +40,9 @@ BR - Aprendi sobre loops com foco nas estruturas while e for usando tanto Bluepr
 EN - I learned about functions and conditionals like if and switch using both Blueprints and C++ in Unreal
 
 BR - Aprendi sobre funções e condicionais como if e switch usando tanto Blueprints quanto C++ na Unreal
+
+🗓️ Day 5
+
+EN – I learned about arrays and TArray, exploring how to use them both in C++ and Blueprints inside Unreal Engine
+
+BR – Aprendi sobre arrays e TArray, explorando como usá-los tanto em C++ quanto nos Blueprints dentro da Unreal Engine
