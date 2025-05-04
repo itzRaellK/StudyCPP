@@ -27,14 +27,14 @@ public:
 // Declare the variable in the header file (.h) using the UPROPERTY macro with EditAnywhere or EditDefaultsOnly specifier.
 // Declare a variavel no arquivo de cabeçalho (.h) usando o macro UPROPERTY com o especificador EditAnywhere ou EditDefaultsOnly.
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
 	int IntForEdit1 = 0;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int IntForEdit2 = 20;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
+	int IntForEdit2 = 0;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
 	int ResultInt = 0;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
 	FString SayHello = "Hello Unreal Engine!";
 
 public:
