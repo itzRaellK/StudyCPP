@@ -34,3 +34,9 @@ BR - Aprendi a comentar em C++ usando barras simples e blocos, comentei nós nos
 EN - I learned about loops focusing on while and for structures using both Blueprints and C++ in Unreal
 
 BR - Aprendi sobre loops com foco nas estruturas while e for usando tanto Blueprints quanto C++ na Unreal
+
+🗓️ Day 4
+
+EN - I learned about functions and conditionals like if and switch using both Blueprints and C++ in Unreal
+
+BR - Aprendi sobre funções e condicionais como if e switch usando tanto Blueprints quanto C++ na Unreal
