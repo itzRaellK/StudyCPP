@@ -17,7 +17,7 @@ AMCharacter::AMCharacter()
 
 // Function that adds two integers and returns the result
 // Função que soma dois números inteiros e retorna o resultado
-int AddFunction(int IntA, int IntB){
+int AddFunction(int IntA, int IntB) {
 	int IntResult = IntA + IntB; 
 	return IntResult; // Retorna o resultado da soma :D
 }
@@ -55,6 +55,30 @@ void SayHelloOnNumberOne(int Index) {
 
 // ----------------------------------------------------------------------------
 
+int PrintGreaterAgeFunction(TArray<int> Array) {
+	// Função que imprime a maior idade de um array de inteiros
+	// Function that prints the greatest age of an array of integers
+
+	// The variable GreaterAge is initialized with 0, as there is no negative age
+	int GreaterAge = 0;
+	// The variable ArrayIndex is initialized with the size of the array
+	int ArrayIndex = Array.Num();
+	// Using a for loop to iterate through the array and find the greatest age
+	for(int i = 0; i < ArrayIndex; i++) {
+		// The variable CurrentAge is initialized with the current element of the array
+		int CurrentAge = Array[i]; // Atualiza a variável CurrentAge com o próximo elemento do array
+		// Check if the current age is greater than the greatest age found so far
+		if(CurrentAge > GreaterAge) {
+			// If the current age is greater than the greatest age found so far, update the greatest age
+			GreaterAge = CurrentAge; // Atualiza a variável GreaterAge com o valor atual de CurrentAge
+			UE_LOG(LogTemp, Warning, TEXT("Idade atual: %d"), GreaterAge); // Imprime a idade atual no log
+		}
+	}
+	return GreaterAge;
+}
+
+// ----------------------------------------------------------------------------
+
 
 // Called when the game starts or when spawned
 void AMCharacter::BeginPlay()
@@ -81,8 +105,6 @@ void AMCharacter::BeginPlay()
 	// 	int Indice = i + 1;
 	// 	UE_LOG(LogTemp, Warning, TEXT("%d - %s"), Indice, *SayHello); // Log para mostrar a string no console :D - Usasse * para converter o FString em TCHAR
 	// }
-
-	
 }
 
 // Called every frame
@@ -96,8 +118,9 @@ void AMCharacter::Tick(float DeltaTime)
 	// int GreaterNumber = GetGreaterNumberFunction(IntForEdit1, IntForEdit2); // Chama a função GetGreaterNumberFunction e armazena o resultado na variável GreaterNumber
 	// UE_LOG(LogTemp, Warning, TEXT("Maior número: %d"), GreaterNumber); // Log para mostrar o maior número no console :D
 
-	SayHelloOnNumberOne(IntForEdit1); // Chama a função SayHelloOnNumberOne e passa o valor de IntForEdit1 como parâmetro
+	// SayHelloOnNumberOne(IntForEdit1); // Chama a função SayHelloOnNumberOne e passa o valor de IntForEdit1 como parâmetro
 
+	PrintGreaterAgeFunction(IntArray);
 }
 
 // Called to bind functionality to input

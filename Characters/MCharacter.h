@@ -33,9 +33,10 @@ public:
 	int IntForEdit2 = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
 	int ResultInt = 0;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
 	FString SayHello = "Hello Unreal Engine!";
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
+	TArray<int> IntArray = {15, 16, 13, 12, 18, 17}; // Array de idades 
 
 public:
 	// Sets default values for this character's properties
