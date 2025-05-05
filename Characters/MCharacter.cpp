@@ -120,7 +120,15 @@ void AMCharacter::Tick(float DeltaTime)
 
 	// SayHelloOnNumberOne(IntForEdit1); // Chama a função SayHelloOnNumberOne e passa o valor de IntForEdit1 como parâmetro
 
-	PrintGreaterAgeFunction(IntArray);
+	// PrintGreaterAgeFunction(IntArray);
+
+	// FString SomeString = NameField + MyName; // Concatena a string NameField com a string MyName e armazena o resultado na variável SomeString
+	// UE_LOG(LogTemp, Warning, TEXT("%s"), *SomeString); // Log para mostrar a string SomeString no console :D - Usasse * para converter o FString em TCHAR
+
+	// ActualVector = GetActorLocation(); // Atualiza a variável ActualVector com a posição atual do personagem
+	// UE_LOG(LogTemp, Warning, TEXT("Posição atual do personagem: %s"), *ActualVector.ToString()); // Imprime a posição atual do personagem no log :D
+
+	
 }
 
 // Called to bind functionality to input

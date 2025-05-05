@@ -37,6 +37,13 @@ public:
 	FString SayHello = "Hello Unreal Engine!";
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
 	TArray<int> IntArray = {15, 16, 13, 12, 18, 17}; // Array de idades 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
+	FString NameField = "Dev Name is: ";
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
+	FString MyName = "Kessler Dev";
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "My Variables")
+	FVector ActualVector = FVector(900, 1100, 102.013); // Variável do tipo vetor que será usada para armazenar a posição atual do personagem
+	
 
 public:
 	// Sets default values for this character's properties
