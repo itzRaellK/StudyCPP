@@ -46,3 +46,9 @@ BR - Aprendi sobre funções e condicionais como if e switch usando tanto Bluepr
 EN – I learned about arrays and TArray, exploring how to use them both in C++ and Blueprints inside Unreal Engine
 
 BR – Aprendi sobre arrays e TArray, explorando como usá-los tanto em C++ quanto nos Blueprints dentro da Unreal Engine
+
+🗓️ Day 6
+
+EN – I learned about FString and FVector, exploring how to use them both in C++ and Blueprints inside Unreal Engine. I practiced string manipulation with FString and vector math with FVector, understanding how they are used in gameplay logic and object positioning.
+
+BR – Aprendi sobre FString e FVector, explorando como usá-los tanto em C++ quanto nos Blueprints dentro da Unreal Engine. Pratiquei manipulação de strings com FString e matemática vetorial com FVector, entendendo como são usados na lógica de gameplay e no posicionamento de objetos.
