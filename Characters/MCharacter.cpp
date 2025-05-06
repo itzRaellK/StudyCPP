@@ -128,7 +128,8 @@ void AMCharacter::Tick(float DeltaTime)
 	// ActualVector = GetActorLocation(); // Atualiza a variável ActualVector com a posição atual do personagem
 	// UE_LOG(LogTemp, Warning, TEXT("Posição atual do personagem: %s"), *ActualVector.ToString()); // Imprime a posição atual do personagem no log :D
 
-	
+	int32* aIntForEditAdress = &IntForEdit1; // Pega o endereço da variável IntForEdit1 e armazena na variável aIntForEditAdress
+	UE_LOG(LogTemp, Warning, TEXT("Valor da variável: '%d' --- Endereço da variável IntForEdit1: '%p'"), IntForEdit1, aIntForEditAdress); // %p é usado para imprimir o endereço da variável no log :D
 }
 
 // Called to bind functionality to input
