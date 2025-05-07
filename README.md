@@ -52,3 +52,9 @@ BR – Aprendi sobre arrays e TArray, explorando como usá-los tanto em C++ quan
 EN – I learned about FString and FVector, exploring how to use them both in C++ and Blueprints inside Unreal Engine. I practiced string manipulation with FString and vector math with FVector, understanding how they are used in gameplay logic and object positioning.
 
 BR – Aprendi sobre FString e FVector, explorando como usá-los tanto em C++ quanto nos Blueprints dentro da Unreal Engine. Pratiquei manipulação de strings com FString e matemática vetorial com FVector, entendendo como são usados na lógica de gameplay e no posicionamento de objetos.
+
+🗓️ Day  7
+
+EN – I learned the basics of pointers in C++, focusing on how to correctly create pointers and assign memory addresses to them. I also practiced updating variable values through their pointers, deepening my understanding of how memory access and manipulation work in C++. This knowledge lays the groundwork for more advanced topics within Unreal Engine's C++ systems.
+
+BR – Aprendi o básico sobre ponteiros em C++, focando em como criá-los corretamente e atribuir endereços de memória a eles. Também pratiquei como atualizar os valores de variáveis através de seus ponteiros, aprofundando meu entendimento sobre como funciona o acesso e a manipulação de memória em C++. Esse conhecimento serve como base para temas mais avançados dentro dos sistemas em C++ da Unreal Engine.
