@@ -79,6 +79,13 @@ int PrintGreaterAgeFunction(TArray<int> Array) {
 
 // ----------------------------------------------------------------------------
 
+void ResetIntegerToZero(int* anyIntegerAdress) {
+	// Function that resets an integer to zero using a pointer
+	*anyIntegerAdress = 0; // Reset the integer to zero using the pointer
+}
+
+// ----------------------------------------------------------------------------
+
 
 // Called when the game starts or when spawned
 void AMCharacter::BeginPlay()
@@ -128,8 +135,16 @@ void AMCharacter::Tick(float DeltaTime)
 	// ActualVector = GetActorLocation(); // Atualiza a variável ActualVector com a posição atual do personagem
 	// UE_LOG(LogTemp, Warning, TEXT("Posição atual do personagem: %s"), *ActualVector.ToString()); // Imprime a posição atual do personagem no log :D
 
-	int32* aIntForEditAdress = &IntForEdit1; // Pega o endereço da variável IntForEdit1 e armazena na variável aIntForEditAdress
-	UE_LOG(LogTemp, Warning, TEXT("Valor da variável: '%d' --- Endereço da variável IntForEdit1: '%p'"), IntForEdit1, aIntForEditAdress); // %p é usado para imprimir o endereço da variável no log :D
+	// int* aIntForEditAdress = &IntForEdit1; // Pega o endereço da variável IntForEdit1 e armazena na variável aIntForEditAdress
+	// UE_LOG(LogTemp, Warning, TEXT("Valor da variável: '%d' --- Endereço da variável IntForEdit1: '%p'"), IntForEdit1, aIntForEditAdress); // %p é usado para imprimir o endereço da variável no log :D
+
+	// IntForEdit1 = 78; // Update the value of IntForEdit1 to 78
+	// int* aIntForEditAdress = &IntForEdit1; // Get the address of the variable IntForEdit1 and store it in the variable aIntForEditAdress1
+	// UE_LOG(LogTemp, Warning, TEXT("Valor da variável: '%d'"), IntForEdit1); // Log to show the value of the variable in the console :D
+
+	// ResetIntegerToZero(aIntForEditAdress); // Call the function ResetIntegerToZero and pass the address
+	// UE_LOG(LogTemp, Warning, TEXT("Valor da variável: '%d'"), IntForEdit1); // Log to show the value of the variable in the console :D
+
 }
 
 // Called to bind functionality to input
