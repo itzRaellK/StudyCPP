@@ -58,3 +58,9 @@ BR – Aprendi sobre FString e FVector, explorando como usá-los tanto em C++ qu
 EN – I learned the basics of pointers in C++, focusing on how to correctly create pointers and assign memory addresses to them. I also practiced updating variable values through their pointers, deepening my understanding of how memory access and manipulation work in C++. This knowledge lays the groundwork for more advanced topics within Unreal Engine's C++ systems.
 
 BR – Aprendi o básico sobre ponteiros em C++, focando em como criá-los corretamente e atribuir endereços de memória a eles. Também pratiquei como atualizar os valores de variáveis através de seus ponteiros, aprofundando meu entendimento sobre como funciona o acesso e a manipulação de memória em C++. Esse conhecimento serve como base para temas mais avançados dentro dos sistemas em C++ da Unreal Engine.
+
+🗓️ Day 8
+
+EN – I learned how to build classes in C++ with constructors, variables, and access modifiers like public, private, and protected. I practiced creating objects dynamically using pointers, assigning values to member variables, and calling class methods. This helped me understand how object-oriented structure works in C++, which is fundamental for working in Unreal Engine even before integrating with its specific macros or systems.
+
+BR – Aprendi como construir classes em C++ com construtores, variáveis e modificadores de acesso como public, private e protected. Pratiquei a criação de objetos dinamicamente usando ponteiros, atribuição de valores às variáveis da classe e chamada de métodos. Isso me ajudou a entender como funciona a estrutura orientada a objetos em C++, o que é fundamental para trabalhar com Unreal Engine, mesmo antes de integrar com as macros ou sistemas específicos da engine.
