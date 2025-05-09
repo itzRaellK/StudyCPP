@@ -86,6 +86,33 @@ void ResetIntegerToZero(int* anyIntegerAdress) {
 
 // ----------------------------------------------------------------------------
 
+// Class that will be used to demonstrate the use of private, public and protected variables
+class SaySomethingManyTimes{
+
+	public:
+	int RandomInt1 = 0;
+	// Function that Says Hello World a number of times defined by the variable RandomInt1
+	void SayHelloWorldWithRandomInt1(){
+		for(int i = 0; i < RandomInt1; i++){
+			UE_LOG(LogTemp, Warning, TEXT("Hello World!"));
+		}
+	}
+
+	private:
+	int RandomInt2 = 0;
+	// Function that Says Hello World a number of times defined by the variable RandomInt1
+	void SayByeWorldWithRandomInt2(){
+		for(int i = 0; i < RandomInt2; i++){
+			UE_LOG(LogTemp, Warning, TEXT("Bye World!"));
+		}
+	}
+
+	protected:
+	int RandomInt3 = 0;
+};
+
+// ----------------------------------------------------------------------------
+
 
 // Called when the game starts or when spawned
 void AMCharacter::BeginPlay()
@@ -112,6 +139,7 @@ void AMCharacter::BeginPlay()
 	// 	int Indice = i + 1;
 	// 	UE_LOG(LogTemp, Warning, TEXT("%d - %s"), Indice, *SayHello); // Log para mostrar a string no console :D - Usasse * para converter o FString em TCHAR
 	// }
+
 }
 
 // Called every frame
@@ -145,6 +173,13 @@ void AMCharacter::Tick(float DeltaTime)
 	// ResetIntegerToZero(aIntForEditAdress); // Call the function ResetIntegerToZero and pass the address
 	// UE_LOG(LogTemp, Warning, TEXT("Valor da variável: '%d'"), IntForEdit1); // Log to show the value of the variable in the console :D
 
+	SaySomethingManyTimes SayHelloManyTimes2 = SaySomethingManyTimes(); // Create an instance of the class SaySomethingManyTimes
+	
+	SaySomethingManyTimes* SayHelloManyTimes = new SaySomethingManyTimes(); // Create a pointer to the class SaySomethingManyTimes
+	SayHelloManyTimes->RandomInt1 = IntForEdit1;
+	SayHelloManyTimes->SayHelloWorldWithRandomInt1(); // Call the function SayHelloWorldWithRandomInt1 of the class SaySomethingManyTimes
+	
+	
 }
 
 // Called to bind functionality to input
